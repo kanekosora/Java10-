@@ -17,7 +17,12 @@ public class CurveEnemy extends Enemy {
 			y++;
 		}
 	}
-
+	public void draw(MyFrame f) {
+		f.setColor(0, 0, 0);
+		f.fillOval(x, y, 30, 30);
+		f.setColor(300, 300, 300);
+		f.fillOval(x+5, y, 20, 30);
+	}
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
