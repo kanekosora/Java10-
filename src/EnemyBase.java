@@ -13,18 +13,21 @@ public void move() {
 	if(x<100) {
 		vx=GameWorld.stage;
 	}
-	if(Math.random()<0.05) {
+	if(Math.random()<0.01) {
 		GameWorld.enemies.add(new DropEnemy(x,y,0,1+GameWorld.stage));
 	}
-	if(Math.random()<0.05) {
+	if(Math.random()<0.01) {
 		GameWorld.enemies.add(new CurveEnemy(x,y,vx,GameWorld.stage));
 		
 	}
-	if(Math.random()<0.05) {
+	if(Math.random()<0.01) {
 		GameWorld.enemies.add(new StraigthEnemy(x,y,0,GameWorld.stage));
 	}
-	if(Math.random()<0.05) {
+	if(Math.random()<0.01) {
 		GameWorld.enemies.add(new RandomEnemy(x,y,0,GameWorld.stage));
+	}
+	if(Math.random()<0.005) {
+		GameWorld.enemies.add(new OriginalEnemy(x,y,0,GameWorld.stage));
 	}
 }
 public void draw(MyFrame f) {

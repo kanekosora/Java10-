@@ -2,7 +2,7 @@
 public class StraigthEnemy extends Enemy{
 	public StraigthEnemy(double x,double y,double vx,double vy) {
 		super(x,y,vx,vy);
-		life=5;
+		life=5+GameWorld.stage;
 	}
 	public void draw(MyFrame f) {
 		f.setColor(0, 0, 0);
